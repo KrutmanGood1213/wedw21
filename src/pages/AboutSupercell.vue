@@ -3,7 +3,6 @@
     <img src="https://i.ibb.co/xtKM436s/IMG-7559.png" alt="IMG-2159" border="0" class="video_background">
 
     <main class="__variable_ff1c38 __variable_4a9947 styles_main__H_BuV">
-      <LanguageSelect />
 
       <div class="styles_contents__ElCjD contents">
         
@@ -15,7 +14,17 @@
       </div>
     </main>
 
-    <Footer />
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 
     <div v-if="isModalVisible" id="modal" class="modal">
       <div class="modal__content">
@@ -39,7 +48,6 @@
 <script setup>
 import Footer from '@/components/Footer.vue'
 import LanguageSelect from '@/components/LanguageSelect.vue'
-import DownloadButtons from '@/components/DownloadButtons.vue'
 import { ref } from 'vue'
 
 const isModalVisible = ref(false)
