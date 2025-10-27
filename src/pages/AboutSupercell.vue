@@ -4,6 +4,16 @@
 
     <main class="__variable_ff1c38 __variable_4a9947 styles_main__H_BuV">
 
+      <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
       <div class="styles_contents__ElCjD contents">
         
 
@@ -13,18 +23,6 @@
         </div>
       </div>
     </main>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
 
     <div v-if="isModalVisible" id="modal" class="modal">
       <div class="modal__content">
