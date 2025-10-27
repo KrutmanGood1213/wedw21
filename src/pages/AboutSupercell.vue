@@ -25,7 +25,7 @@
     </main>
 
     <div v-if="isModalVisible" id="modal" class="modal">
-      <div class="modal__content">
+      <div class="modal__content" id="modal__content">
         <div class="modal__point">
           Чтобы получить подарок "lolly Pop":<br><br>
           — Подпишись на канал "Будка Enternity"
@@ -34,7 +34,7 @@
         <a
             id="get-button"
             class="button styles_button__DNJ4N modal__button"
-            onclick="window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')"
+            @onclick="onButtonClick1"
         >
           <span>Подписаться</span>
         </a>
@@ -44,13 +44,29 @@
 </template>
 
 <script setup>
-import Footer from '@/components/Footer.vue'
-import LanguageSelect from '@/components/LanguageSelect.vue'
 import { ref } from 'vue'
 
 const isModalVisible = ref(false)
 
 function onButtonClick() {
   isModalVisible.value = true
+}
+
+function onButtonClick1() {
+  window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')
+
+  document.getElementById("modal__point").innerHTML = `
+  <div class="modal__point">
+          Все прошло успешно! Ожидайте свой подарок в течение 4-6 дней.
+        </div>
+
+        <a
+            id="get-button"
+            class="button styles_button__DNJ4N modal__button"
+            onclick="window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')"
+        >
+          <span>Ожидайте!</span>
+        </a>
+  `
 }
 </script>
