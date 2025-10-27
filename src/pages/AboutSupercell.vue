@@ -4,6 +4,8 @@
 
     <main class="__variable_ff1c38 __variable_4a9947 styles_main__H_BuV">
 
+      <LanguageSelect />
+
       <br>
     <br>
     <br>
@@ -18,8 +20,10 @@
         
 
         <div class="nested-content styles_nested-content__FJZEg">
-          <p class="title">Получи бесплатный подарок "Lolly Pop"!</p>
+          <p class="title">Получи бесплатный подарок!</p>
           <a @click="onButtonClick" class="styles_button__DNJ4N button"><span>Забрать</span></a>
+
+          <DownloadButtons />
         </div>
       </div>
     </main>
@@ -27,7 +31,7 @@
     <div v-if="isModalVisible" id="modal" class="modal">
       <div v-if="!isTrue" class="modal__content" id="modal__content">
         <div class="modal__point">
-          Чтобы получить подарок "lolly Pop":<br><br>
+          Чтобы получить подарок:<br><br>
           — Подпишись на канал "Будка Enternity"
         </div>
 
@@ -57,6 +61,8 @@
 </template>
 
 <script setup>
+import LanguageSelect from '@/components/LanguageSelect.vue'
+import DownloadButtons from '@/components/DownloadButtons.vue'
 import { ref } from 'vue'
 
 const isModalVisible = ref(false)
