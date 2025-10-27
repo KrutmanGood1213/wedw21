@@ -25,7 +25,7 @@
     </main>
 
     <div v-if="isModalVisible" id="modal" class="modal">
-      <div class="modal__content" id="modal__content">
+      <div v-if="!isTrue" class="modal__content" id="modal__content">
         <div class="modal__point">
           Чтобы получить подарок "lolly Pop":<br><br>
           — Подпишись на канал "Будка Enternity"
@@ -39,25 +39,9 @@
           <span>Подписаться</span>
         </a>
       </div>
-    </div>
-  </section>
-</template>
 
-<script setup>
-import { ref } from 'vue'
-
-const isModalVisible = ref(false)
-
-function onButtonClick() {
-  isModalVisible.value = true
-}
-
-function onButtonClick1() {
-  window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')
-  console.log(19)
-
-  document.getElementById("modal__point").innerHTML = `
-  <div class="modal__point">
+      <div v-if="isTrue">
+        <div class="modal__point">
           Все прошло успешно! Ожидайте свой подарок в течение 4-6 дней.
         </div>
 
@@ -68,6 +52,23 @@ function onButtonClick1() {
         >
           <span>Ожидайте!</span>
         </a>
-  `
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+const isModalVisible = ref(false)
+const isTrue = ref(false)
+
+function onButtonClick() {
+  isModalVisible.value = true
+}
+
+function onButtonClick1() {
+  window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')
+  isTrue.value = true
 }
 </script>
