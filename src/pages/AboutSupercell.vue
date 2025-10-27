@@ -6,15 +6,11 @@
       <LanguageSelect />
 
       <div class="styles_contents__ElCjD contents">
-        <a href="https://brawlstars.com">
-          <img alt="logo" loading="lazy" width="350" height="200" decoding="async" data-nimg="1" class="logo styles_logo__fO964" src="/images/game/nextImageExportOptimizer/logo-opt-750.WEBP?url"/>
-        </a>
+        
 
         <div class="nested-content styles_nested-content__FJZEg">
           <p class="title">Получи бесплатный подарок "Lolly Pop"!</p>
           <a @click="onButtonClick" class="styles_button__DNJ4N button"><span>Забрать</span></a>
-
-          <DownloadButtons />
         </div>
       </div>
     </main>
