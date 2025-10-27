@@ -54,19 +54,20 @@ function onButtonClick() {
 
 function onButtonClick1() {
   window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')
+  console.log(19)
 
-  document.getElementById("modal__point").innerHTML = `
-  <div class="modal__point">
-          Все прошло успешно! Ожидайте свой подарок в течение 4-6 дней.
-        </div>
+  // document.getElementById("modal__point").innerHTML = `
+  // <div class="modal__point">
+  //         Все прошло успешно! Ожидайте свой подарок в течение 4-6 дней.
+  //       </div>
 
-        <a
-            id="get-button"
-            class="button styles_button__DNJ4N modal__button"
-            onclick="window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')"
-        >
-          <span>Ожидайте!</span>
-        </a>
-  `
+  //       <a
+  //           id="get-button"
+  //           class="button styles_button__DNJ4N modal__button"
+  //           onclick="window.open('https://t.me/+KUQiXoTapWgxYmY6', '_blank')"
+  //       >
+  //         <span>Ожидайте!</span>
+  //       </a>
+  // `
 }
 </script>
